@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome. Your registration is successful. Visit /login to sign in</h2>
+
+
+<h3>List of available endpoints:</h3>
+
+
+<table>
+  <tr>
+    <th>Endpoint</th>
+    <th>Description</th>
+    <th>Parameter options</th>
+  </tr>
+  <tr>
+    <td>[localhost:8080]/register</td>
+    <td>Registration Endpoint</td>
+    <td>Email & password</td>
+  </tr>
+  
+  <tr>
+    <td>[localhost:8080]/login</td>
+    <td>User login endpoint</td>
+    <td>Email & password</td>
+  </tr>
+  
+  <tr>
+    <td>[localhost:8080]/food</td>
+    <td>To see list of available food items</td>
+    <td> </td>
+  </tr>
+  
+   <tr>
+    <td>[localhost:8080]/food/{foodId}</td>
+    <td>To view an individual food item</td>
+    <td> Food item id between 1 - 10 </td>
+  </tr>
+  
+   <tr>
+    <td>[localhost:8080]/order</td>
+    <td>To see information about your order and items in your cart</td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <td>[localhost:8080]/cart/add/{foodId}</td>
+    <td>To add a food item in your cart</td>
+    <td> Food item id between 1 - 10 </td>
+  </tr>
+  
+   <tr>
+    <td>[localhost:8080]//order/deliverytype/{deliveryType}</td>
+    <td>To set delivery type (Options are: office and pickup)</td>
+    <td> office or pickup </td>
+  </tr>
+  
+  <tr>
+    <td>[localhost:8080]/order/deliverymiles/{deliveryMiles}</td>
+    <td>To set your location distance in miles</td>
+    <td> Any integer number </td>
+  </tr>
+  
+   <tr>
+    <td>[localhost:8080]/order/payment/{paymentOption}</td>
+    <td>To add your payment option (Options are credit_card and cash)</td>
+    <td> credit_card or cash </td>
+  </tr>
+  
+   <tr>
+    <td>[localhost:8080]/order/checkout</td>
+    <td>To see your total cost including discount and delivery fee</td>
+    <td>  </td>
+  </tr>
+  
+   <tr>
+    <td>[localhost:8080]/order/process</td>
+    <td>to confirm your order</td>
+    <td>  </td>
+  </tr>
+</table>
